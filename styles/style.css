@@ -126,3 +126,16 @@ header{
     visibility: visible;
     color: red;
 }
+
+a#LT{
+    color: #fff;
+    position: relative;
+    top: 50vh;
+    right: 42vh;
+    transition: .5s;
+}
+a#LT:hover{
+    cursor: pointer;
+    color: #868686;
+    text-decoration: underline;
+}

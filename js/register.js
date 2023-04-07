@@ -23,31 +23,31 @@ function checkInputs(){
     const ConfirmPasswordValue = ConfirmPassword.value;
 
     if(usernameValue === ''){
-        setErrorFor(username, "O nome de usuario é obrigatorio!");
+        setErrorFor(username, "Username is required!");
     }else if(usernameValue != ''){
         setSuccessFor(username);
     }
 
     if(emailValue === ''){
-        setErrorFor(email, "O email é obrigatorio!");
+        setErrorFor(email, "Email is required!");
     }else if(checkEmail(email)){
-        setErrorFor(email, "Por favor use um email válido");
+        setErrorFor(email, "Please use a valid email!");
     }else{
         setSuccessFor(email);
     }
 
     if(passwordValue === ''){
-        setErrorFor(password, 'Crie uma senha para que ninguem descubra');
+        setErrorFor(password, 'Create a password so no one can find out');
     }else if(passwordValue.length < 8){
-        setErrorFor(password, "Digite senha com mais de 8 digitos");
+        setErrorFor(password, "Enter password with more than 8 digits");
     }else{
         setSuccessFor(password);
     }
 
     if(ConfirmPasswordValue === ''){
-        setErrorFor(ConfirmPassword, 'Digite a mesma senha criada!');
+        setErrorFor(ConfirmPassword, 'Enter the same password created!');
     }else if(ConfirmPasswordValue != passwordValue){
-        setErrorFor(ConfirmPassword, 'as senhas não estão exatas!');
+        setErrorFor(ConfirmPassword, 'passwords are not accurate!');
     }else{
         setSuccessFor(ConfirmPassword);
     }
@@ -58,10 +58,10 @@ function checkInputs(){
     });
 
     if(formIsValid){
-        console.log('o formulario está 100% válido');
+        console.log('the form is 100% valid');
        // window.location = './lol.html';
     }else{
-        console.log('o formulario não está 100% válido');
+        console.log('the form is not 100% valid');
     }
 }
 
