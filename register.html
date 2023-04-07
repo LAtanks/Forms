@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="imgs/check-circle-fill.svg" type="image/x-icon">
+    <title>Formulario de register</title>
+</head>
+<body>
+      <div class="register">
+        <header>
+            <h2>Register</h2>
+        </header>
+        <form id="form" class="form">
+            <div class="form-controls">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter the username">
+                <img src="imgs/check-circle-fill.svg" class="successimg" alt="">
+                <img src="imgs/exclamation-circle-fill.svg" class="errorimg" alt="">
+                <small>Error message</small>
+            </div>
+            <div class="form-controls">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="Enter the email">
+                <img src="imgs/check-circle-fill.svg" class="successimg" alt="">
+                <img src="imgs/exclamation-circle-fill.svg" class="errorimg" alt="">
+                <small>Error message</small>
+            </div>
+            <div class="form-controls">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter the password">
+                <img src="imgs/check-circle-fill.svg" class="successimg" alt="">
+                <img src="imgs/exclamation-circle-fill.svg" class="errorimg" alt="">
+                <small>Error message</small>
+            </div>
+            <div class="form-controls">
+                <label for="ConfirmPassword">confirm password</label>
+                <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Confirm the password">
+                <img src="imgs/check-circle-fill.svg" class="successimg" alt="">
+                <img src="imgs/exclamation-circle-fill.svg" class="errorimg" alt="">
+                <small>Error message</small>
+            </div>
+            <p>If you already have an account, <a href="login.html" style="cursor: pointer;">login</a></p>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
